@@ -39,7 +39,7 @@
     </nav>
     <h1 class="mt-3 mb-3 text-center"><i class="fa-solid fa-table-list"></i> Listado de reclamos:</h1>
     <div class="border border-primary mb-5">
-        <table class="table dark-table text-center">
+        <table class="table dark-table text-center table-striped table-hover" id="table-reclamos" name="table-reclamos">
             <thead>
                 <tr>
                     <th>#</th>
@@ -49,60 +49,28 @@
                     <th>Prioridad</th>
                     <th>Cliente</th>
                     <th>Email</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        Reemplazo de medicamento
-                    </td>
-                    <td>
-                        Se necesita de reemplazo de buscapinas
-                    </td>
-                    <td>
-                        Alta
-                    </td>
-                    <td>
-                        Alta
-                    </td>
-                    <td>
-                        Lucas Rubiolo
-                    </td>
-                    <td>
-                        lucasrubiolo@gmail.com
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        2
-                    </td>
-                    <td>
-                        Reemplazo de medicamento
-                    </td>
-                    <td>
-                        Se necesita de suavicort de 200 ml
-                    </td>
-                    <td>
-                        Baja
-                    </td>
-                    <td>
-                        Baja
-                    </td>
-                    <td>
-                        Milton Dutto
-                    </td>
-                    <td>
-                        m77dutto@gmail.com
-                    </td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td><a href="" class="btn btn-success">Editar</a>
+                    &nbsp;
+                    <a href="" class="btn btn-danger ml-3 btn-borrar">Eliminar</a></td>
                 </tr>
             </tbody>
         </table>
     </div>
     <div class="text-center mb-3">
-        <button class="btn btn-info text-white" style="size: 50px;"><i class="fa-solid fa-print"></i> Imprimir PDF</button>
+        <button class="btn btn-info text-white" style="size: 50px;"><i class="fa-solid fa-print" onclick="printData()">
+        </i> Imprimir PDF</button>
     </div>
 
     <footer class="bg-dark text-center text-lg-start text-white">
@@ -159,7 +127,11 @@
             © 2020 Copyright SiG Software. Todos los derechos reservados
         </div>
     </footer>
+    <script src="./../js/jquery-3.6.4.js"></script>
+    <script src="./../js/bootbox.all.js"></script>
     <script src="./../js/bootstrap.js"></script>
+    <script src="./../js/abmReclamos.js"></script>
+    <script src="./../js/printReclamos.js"></script>
 </body>
 
 </html>
